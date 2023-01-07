@@ -1,19 +1,15 @@
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-#Reading the csv files 
+# Reading the csv files 
 df_14=pd.read_csv("/Users/reenarani/Downloads/FIFA - 2014.csv")
 df_18=pd.read_csv("/Users/reenarani/Downloads/FIFA - 2018.csv")
 
-#Sorting the values based on highest to lowest Wins 
+# Sorting the values based on highest to lowest Wins 
 df_14=df_14.sort_values(by=['Win'], ascending=False)
 df_18=df_18.sort_values(by=['Win'], ascending=False)
 df_14.head()
-
-
 
 print(df_14)
 
